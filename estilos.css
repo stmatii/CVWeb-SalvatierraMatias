@@ -1,0 +1,145 @@
+/*Importaciones*/
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  body {
+    background: linear-gradient(to top left, #FF96DB, #A3F3F5); } }
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width: 321px) {
+  body {
+    background: linear-gradient(to top left, #A3F3F5, #FF96DB); } }
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width: 320px) {
+  body {
+    background: linear-gradient(to top left, #FF96DB, #A3F3F5); } }
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  body {
+    background: linear-gradient(to top left, #A3F3F5, #FF96DB); } }
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  body {
+    background: linear-gradient(to top left, #FF96DB, #A3F3F5); } }
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  body {
+    background: linear-gradient(to top left, #A3F3F5, #FF96DB); } }
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width: 1224px) {
+  body {
+    background: linear-gradient(to top left, #FF96DB, #A3F3F5); } }
+
+/* Large screens ----------- */
+@media only screen and (min-width: 1824px) {
+  body {
+    background: linear-gradient(to top left, #A3F3F5, #FF96DB); } }
+
+/* iPhone 4 ----------- */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+  body {
+    background: linear-gradient(to top left, #FF96DB, #A3F3F5); } }
+
+
+.titulo {
+    padding: 0pt 10% 0pt 10%;
+    margin: 10pt 0 10pt 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   /* border: solid #121B26;
+    background-color:#121B26;
+    color: #ffffff;*/
+
+    background: rgba( 255, 255, 255, 0.6 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+ 
+}
+
+.titulo2 {
+    /*background-color: #253140;
+    color: #485B73;*/
+    padding: 10pt 10% 10pt 10%;
+    display: flex;
+    justify-content: center;
+
+    background: rgba( 255, 255, 255, 0.3 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+body{
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+
+    background: rgb(62,182,184);
+    background: linear-gradient(180deg, rgba(62,182,184,1) 0%, rgba(10,65,103,1) 100%);
+
+}
+
+
+.descripcion{
+    margin: auto;
+    display: flex;
+    -ms-flex-align: center;
+    /*background-color: #485B73;
+    border: solid;*/
+    padding: 20pt 10% 20pt 10%;
+
+    background: rgba( 255, 255, 255, 0.3 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+}
+
+.experiencia {
+    margin: auto;
+    padding: 0pt 10% 0pt 10%;
+
+}
+
+.educacion {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-items: start;
+    padding: 0pt 10% 0pt 10%;
+
+
+}
+
+.habilidades {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.contacto {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background: rgba( 255, 255, 255, 0.6 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    padding: 10pt 10% 10pt 10%;
+ 
+}
