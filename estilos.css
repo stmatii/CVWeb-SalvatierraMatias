@@ -145,5 +145,9 @@ body{
 }
 
 a {
-  color: #ffffff;
+  color: rgb(62,182,184);
+}
+
+.manito{
+  padding: 0 0 0 10px;
 }
