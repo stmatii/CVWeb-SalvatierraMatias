@@ -130,24 +130,154 @@ body{
 }
 
 .contacto {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "titulo3 titulo3 titulo3"
+    "telefono correo linkedin";
+
+
+  justify-items: center; 
+  align-items: center; 
+
     background: rgba( 255, 255, 255, 0.6 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 4px );
     -webkit-backdrop-filter: blur( 4px );
     border-radius: 10px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
-    padding: 10pt 10% 10pt 10%;
- 
+  
 }
+.titulo3 { grid-area: titulo3; }
+.telefono { grid-area: telefono; }
+.correo { grid-area: correo; }
+.linkedin { grid-area: linkedin; }
 
 a {
-  color: rgb(62,182,184);
+  color: rgb(249, 249, 249);
 }
 
 .manito{
   padding: 0 0 0 10px;
+}
+
+.proyectos {  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 40px 614px 40px 614px 40px 614px;
+  gap: 16px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Proyecto1 Proyecto1 Proyecto1"
+    "tablero1 tablero1 tablero1"
+    "proyecto2 proyecto2 proyecto2"
+    "tablero2 tablero2 tablero2"
+    "proyecto3 proyecto3 proyecto3"
+    "tablero3 tablero3 tablero3";
+}
+
+.Proyecto1 { 
+  justify-self: center; 
+  grid-area: Proyecto1; 
+  height: 40px; }
+
+.tablero1 { 
+  justify-self: center; 
+  grid-area: tablero1; }
+
+.proyecto2 { 
+  justify-self: center; 
+  grid-area: proyecto2; }
+
+.tablero2 { 
+  justify-self: center; 
+  grid-area: tablero2; }
+
+.proyecto3 { 
+  justify-self: center; 
+  grid-area: proyecto3; }
+
+.tablero3 { 
+  justify-self: center; 
+  grid-area: tablero3; }
+
+.volver{
+  margin: 10pt 0 10pt 0;
+  padding: 5% 0 5% 0;
+}
+
+.infoProyectos {
+  padding: 0pt 10% 0pt 10%;
+  margin: 10pt 0 10pt 0;
+}
+
+/*Copia carrusel*/
+
+.carrousel{
+  width: 1028px;
+  padding: 0pt 10% 0pt 10%;
+  margin: 10pt 0 10pt 0;
+}
+
+.conteCarrousel{
+  width: 1028x;
+  height: 588px;
+  overflow: hidden;
+}
+
+.itemCarrousel{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.itemCarrouselTarjeta{
+  width: 100%;
+  height: 100%;
+}
+
+.itemCarrouselArrows{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%; 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px; 
+}
+
+.itemCarrouselArrows > i:hover {
+  cursor: pointer;
+}
+
+#itemCarrousel-1{
+  background-color: rgb(226, 50, 50);
+}
+
+#itemCarrousel-2{
+  background-color: rgb(50, 200, 226);
+}
+
+#itemCarrousel-3{
+  background-color: rgb(200, 226, 50);
+}
+
+.conteCarrouselController{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.conteCarrouselController > a{
+  text-decoration: none;
+  font-size: 2em;
+  color: rgb(255, 255, 255);
+}
+
+.itemCarrouselArrows > a > i{
+  color: white;
 }
