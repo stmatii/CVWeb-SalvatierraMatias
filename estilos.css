@@ -1,46 +1,11 @@
-/*Importaciones*/
-/* Smartphones (portrait and landscape) ----------- */
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {}
-
-/* Smartphones (landscape) ----------- */
-@media only screen and (min-width: 321px) {}
-
-/* Smartphones (portrait) ----------- */
-@media only screen and (max-width: 320px) { }
-
-/* iPads (portrait and landscape) ----------- */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) { }
-
-/* iPads (landscape) ----------- */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) { }
-
-/* iPads (portrait) ----------- */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) { }
-
-/* Desktops and laptops ----------- */
-@media only screen and (min-width: 1224px) {
- }
-
-/* Large screens ----------- */
-@media only screen and (min-width: 1824px) {
-   }
-
-/* iPhone 4 ----------- */
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
-  }
-
-
 
 .titulo {
-    padding: 0pt 10% 0pt 10%;
-    margin: 10pt 0 10pt 0;
+    padding: 10pt;
+    margin: 5pt 0;
     display: flex;
     justify-content: center;
     align-items: center;
-   /* border: solid #121B26;
-    background-color:#121B26;
-    color: #ffffff;*/
-
+    width: 100%;
     background: rgba( 255, 255, 255, 0.6 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 4px );
@@ -51,10 +16,11 @@
 }
 
 .enlaceProy {
-  padding: 10pt 10% 10pt 10%;
+  width: 100%;
+  padding: 10pt 0pt;
+  margin: 10pt 0;
   display: flex;
   justify-content: center;
-
   background: rgba(63, 144, 180, 0.8);
   box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
   backdrop-filter: blur( 4px );
@@ -64,12 +30,12 @@
 }
 
 .titulo2 {
-    /*background-color: #253140;
-    color: #485B73;*/
-    padding: 10pt 10% 10pt 10%;
-    display: flex;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+    padding: 10pt 0;
+    margin: 10pt 0;
     justify-content: center;
-
     background: rgba( 255, 255, 255, 0.3 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 4px );
@@ -79,26 +45,28 @@
 }
 
 body{
+  width: 100%;
     color: white;
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
-
-    margin: 0 auto;
-
     background: rgb(62,182,184);
     background: linear-gradient(180deg, rgba(62,182,184,1) 0%, rgba(10,65,103,1) 100%);
+}
 
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
 }
 
 
 .descripcion{
-    margin: auto;
+
     display: flex;
     -ms-flex-align: center;
-    /*background-color: #485B73;
-    border: solid;*/
     padding: 20pt 10% 20pt 10%;
-
+    margin: 20pt 10pt;
     background: rgba( 255, 255, 255, 0.3 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 4px );
@@ -109,7 +77,7 @@ body{
 }
 
 .experiencia {
-    margin: auto;
+
     padding: 0pt 10% 0pt 10%;
 
 }
@@ -119,8 +87,6 @@ body{
     grid-template-columns: 50% 50%;
     justify-items: start;
     padding: 0pt 10% 0pt 10%;
-
-
 }
 
 .habilidades {
@@ -129,14 +95,18 @@ body{
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: end;
+    padding: 10pt 0;
 }
 
 .contacto {
+  width: 100%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: end;
+  padding: 20pt 20pt;
+  margin: 10pt 0;
 }
 
 .linkedin {
@@ -146,32 +116,6 @@ body{
   justify-self: space-evenly;
 }
 
-.contact {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: 
-    "titulo3 titulo3 titulo3 titulo3"
-    "ubicacion telefono correo linkedin";
-
-
-  justify-items: center; 
-  align-items: center; 
-
-    background: rgba( 255, 255, 255, 0.6 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 4px );
-    -webkit-backdrop-filter: blur( 4px );
-    border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
-  
-}
-.titulo3 { grid-area: titulo3; }
-.telefono { grid-area: telefono; }
-.correo { grid-area: correo; }
-.linkedin { grid-area: linkedin; }
-.ubicacion { grid-area: ubicacion;}
-
 a {
   color: rgb(249, 249, 249);
 }
@@ -179,81 +123,46 @@ a {
 .manito{
   padding: 0 0 0 10px;
 }
-
-.proyectos {  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 40px 614px 40px 614px 40px 614px;
-  gap: 16px 0px;
-  grid-auto-flow: row;
-  grid-template-areas:
-    "Proyecto1 Proyecto1 Proyecto1"
-    "tablero1 tablero1 tablero1"
-    "proyecto2 proyecto2 proyecto2"
-    "tablero2 tablero2 tablero2"
-    "proyecto3 proyecto3 proyecto3"
-    "tablero3 tablero3 tablero3";
-}
-
-.Proyecto1 { 
-  justify-self: center; 
-  grid-area: Proyecto1; 
-  height: 40px; }
-
-.tablero1 { 
-  justify-self: center; 
-  grid-area: tablero1; }
-
-.proyecto2 { 
-  justify-self: center; 
-  grid-area: proyecto2; }
-
-.tablero2 { 
-  justify-self: center; 
-  grid-area: tablero2; }
-
-.proyecto3 { 
-  justify-self: center; 
-  grid-area: proyecto3; }
-
-.tablero3 { 
-  justify-self: center; 
-  grid-area: tablero3; }
-
 .volver{
-  margin: 10pt 0 10pt 0;
+
   padding: 5% 0 5% 0;
 }
 
 .infoProyectos {
   display: flex;
-  justify-content: flex-start;
-  padding: 0pt 10% 0pt 10%;
-}
+  justify-content: center;
+  padding: 10pt 0 5pt 0;
 
-.avn {
-  padding: 0pt 10% 0pt 10%;
-  margin: 0 auto;
-  max-width: 1028px;
 }
-
 
 .container{
-  /* display: flex;
-  justify-content: center; */
-  width: 800px;
-  padding: 0pt 10% 0pt 10%;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 75vw;
+  max-width: 1000px;
+  min-width: 250px;
+  flex-direction: column;
+  padding: 0 0 10pt 0;
 }
 
 ul, li {
     padding: 0;
-    margin: 0;
+
     list-style: none;
 }
 
 ul.slider{
   position: relative;
-  width: 800px;
-  height: 500px;
+  width: 420px;
+  height: 250px;
+
+}
+
+main{
+  margin: 0;
+  min-width: 320px;
 }
 
 ul.slider li {
@@ -262,15 +171,14 @@ ul.slider li {
     top: 0px;
     opacity: 0;
     width: inherit;
-    height: inherit;
+    /* height: inherit; */
     transition: opacity .5s;
     background:#fff;
 }
 
 ul.slider li img{
-  width: center;
-  height: 100%;
-  object-fit: cover;
+  width: 420px;
+  object-fit: scale-down;
 }
 
 ul.slider li:first-child {
@@ -283,7 +191,7 @@ ul.slider li:target {
 
 .menu{
   text-align: center;
-  margin: 20px;
+
 }
 
 .menu li{
@@ -304,6 +212,19 @@ ul.slider li:target {
 }
 
 .texParrafo {
-  margin: auto;
-  padding: 0pt 10% 10pt 10%;
+  justify-content: center;
+  padding: 10pt 10%;
+
+
+}
+
+h4 {
+  padding: 20pt 0 0 0;
+}
+
+#caja{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
